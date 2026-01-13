@@ -1,0 +1,119 @@
+@import "./style.css";
+
+.section {
+	margin-bottom: 5rem;
+}
+
+.section .profile-picture-container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.section .profile-picture-container > * {
+	max-width: 256px;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 5rem;
+}
+
+.section .profile-picture-container .picture {
+	border: 2px solid var(--color-accent);
+}
+
+.section .profile-picture-container .shadow {
+	position: absolute;
+	filter: blur(50px) saturate(2);
+	z-index: -1;
+}
+
+.section .content {
+	color: var(--color-foreground);
+}
+
+.section .kitty {
+	color: darkorange;
+	font-size: 2rem;
+	font-family: "Shadows Into Light";
+}
+
+.section .grid {
+	background-color: #101010;
+	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 1rem;
+	row-gap: 3rem;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	font-family: "ZedMono Nerd Font";
+	font-size: 2rem;
+	text-align: center;
+	border: 1px solid var(--color-accent);
+}
+
+.section .grid > * > * {
+	padding: 1rem;
+}
+
+.section .grid .c-container {
+	color: lightblue;
+	border-radius: 1rem;
+	position: relative;
+}
+
+.section .grid .c-container .c {
+	position: relative;
+	background: linear-gradient(to right, #2ecc71, #6c71c4);
+	border-radius: 1rem;
+}
+
+.section .grid .c-container .shadow {
+	background: linear-gradient(to right, #2ecc71, #6c71c4);
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	filter: blur(50px);
+}
+
+.section .grid .rust {
+	color: #f1530f;
+}
+
+.section .grid .ocaml {
+	color: #f1800f;
+}
+
+.section .grid .odin {
+	color: #306980;
+}
+
+.section .grid .zig {
+	color: #f1800f;
+}
+
+.section .grid .csharp {
+	color: #9179e4;
+}
+
+.section .grid .java {
+	color: #f89820;
+}
+
+.section .grid .python {
+	color: #306998;
+}
+
+.section .grid .javascript {
+	color: yellow;
+}
+
+@keyframes animation-profile-picture-shadow {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

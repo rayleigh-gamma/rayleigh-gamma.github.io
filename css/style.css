@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "ZedMono Nerd Font";
+	src: url("../public/fonts/ZedMonoNerdFont-Regular.ttf");
+}
+
+:root {
+	--color-background: #131313;
+	--color-accent: lightpink;
+	--color-foreground: #ecf0f1;
+	--color-tip: #808080;
+	--font-family: "Indie Flower";
+}
+
+body {
+	margin: 0;
+	padding: 20rem;
+	padding-top: 2rem;
+	padding-bottom: 0;
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+	font-family: var(--font-family);
+	border-top: 1px solid var(--color-accent);
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+h1 {
+	color: var(--color-accent);
+}
+
+a {
+	all: unset;
+	cursor: pointer;
+}
+
+.tip {
+	color: var(--color-tip);
+	font-family: "ZedMono Nerd Font";
+}
+
+.nerd-symbol {
+	font-family: "ZedMono Nerd Font";
+}
+
+.horizontal-container {
+	display: flex;
+	gap: 1rem;
+	place-items: center;
+}

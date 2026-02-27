@@ -5,10 +5,10 @@
 
 :root {
 	--color-background: #131313;
-	--color-accent: lightpink;
+	--color-accent: #96a6c8;
 	--color-foreground: #ecf0f1;
 	--color-tip: #808080;
-	--font-family: "Indie Flower";
+	--font-family: "Roboto Condensed";
 }
 
 body {
@@ -48,4 +48,60 @@ a {
 	display: flex;
 	gap: 1rem;
 	place-items: center;
+}
+
+.section .header {
+	display: flex;
+}
+
+.section .header {
+	display: flex;
+	gap: 1rem;
+}
+
+.section .header .element {
+	width: 7rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+
+.section .header .element .main {
+	display: flex;
+	gap: 1rem;
+	background-color: var(--color-accent);
+	color: var(--color-background);
+	padding: 0.7rem;
+	border-radius: 0.7rem;
+	transition: 200ms ease background-color;
+	cursor: pointer;
+	justify-content: center;
+}
+
+.section .header .element .main:hover {
+	background-color: whitesmoke;
+}
+
+.section .header .element .comment {
+	text-align: center;
+	color: gray;
+}
+
+.section .grid {
+	background-color: #101010;
+	border-radius: 1rem;
+	margin: 0 auto;
+	padding: 1rem;
+	row-gap: 3rem;
+	display: grid;
+	grid-template-columns: 3fr 3fr 3fr;
+	font-family: "ZedMono Nerd Font";
+	font-size: 2rem;
+	text-align: center;
+	border: 1px solid var(--color-accent);
+	overflow: scroll;
+}
+
+.section .grid > * > * {
+	padding: 1rem;
 }

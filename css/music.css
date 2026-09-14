@@ -1,0 +1,37 @@
+audio
+{
+	background-color: var(--color-audio-controls);
+	transition: 200ms ease-in all;
+}
+
+audio:hover
+{
+	background-color: var(--color-highlight);
+}
+
+.musics-container
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	place-items: center;
+	overflow-y: scroll;
+	height: 50%;
+	background-color: #181818;
+	padding: var(--padding-front);
+	gap: 3rem;
+	margin: 1rem;
+}
+
+.musics-container > div
+{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	place-items: center;
+}
+
+.musics-container > div > audio
+{
+	width: 80%;
+}

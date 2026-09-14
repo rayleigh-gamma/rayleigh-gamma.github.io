@@ -1,0 +1,14 @@
+.latest-container
+{
+	display: flex;
+	place-items: center;
+	gap: 2rem;
+	text-align: center;
+	padding: var(--padding-front);
+}
+
+.latest-container > div
+{
+	flex-grow: 1;
+	width: 100%;
+}

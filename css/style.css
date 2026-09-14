@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root
+{
+    --color-back-background: #101010;
+    --color-front-background: #202020;
+    --color-foreground: #e2e1ea;
+    --color-link: #6fb8d8;
+    --color-link-hover: #5097e2;
+	--color-highlight: #d692e5;
+	--color-audio-controls: #54b07a;
+    --font-content: "Cantarell";
+    --padding-front: 1rem;
+	--width-latest-item-preview: 256px;
+}
+
+html
+{
+    background-color: var(--color-back-background);
+}
+
+body
+{
+    color: var(--color-foreground);
+    font-family: var(--font-content);
+    margin: 1rem auto;
+    width: min(90%, 1200px);
+    line-height: 1.6;
+}
+
+a
+{
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: var(--color-link-hover);
+}
+
+header
+{
+    background-color: var(--color-front-background);
+    padding: var(--padding-front);
+    display: flex;
+	margin-bottom: 1rem;
+}
+
+header > *
+{
+	width: 33.3%;
+    align-self: center;
+}
+
+header > .middle
+{
+    text-align: center;
+    color: white;
+}
+
+header > .right
+{
+    display: flex;
+    place-content: flex-end;
+    gap: 1rem;
+}
+
+h3
+{
+	margin-bottom: 0.5rem;
+	transform: scale(1, 1.1);
+}
+
+p
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.profile-picture
+{
+    width: 64px;
+    border-radius: 8px;
+}
+
+.content-container
+{
+	background-color: var(--color-front-background);
+	padding: var(--padding-front);
+    margin-bottom: 1rem;
+    gap: 1rem;
+    text-align: justify;
+}
+
+.para
+{
+	margin-right: 0.3rem;
+}
+
+.highlight
+{
+	color: var(--color-highlight);
+}
+
+.preview-image
+{
+	width: var(--width-latest-item-preview);
+}

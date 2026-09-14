@@ -1,0 +1,58 @@
+.pixel-arts-container
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	place-items: center;
+	gap: 1rem;
+	padding: var(--padding-front);
+	height: 80%;
+	overflow-y: scroll;
+	background-color: #181818;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.musics-container > div
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	place-items: center;
+}
+
+.pixel-arts-container > div > img
+{
+	width: var(--size-pixel-art);
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px)
+{
+	:root
+	{
+		--size-pixel-art: 128px;
+	}
+}
+
+@media only screen and (min-width: 600px)
+{
+	:root
+	{
+		--size-pixel-art: 128px;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	:root
+	{
+		--size-pixel-art: 128px;
+	}
+}
+
+@media only screen and (min-width: 992px)
+{
+	:root
+	{
+		--size-pixel-art: 512px;
+	}
+}
